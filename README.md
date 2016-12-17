@@ -8,8 +8,9 @@ p. 22 Cas n°1 : Intéractions entre espace utilisateur, noyau et matériel
 ============================================================================
 
 exemple-01
+----------
  usage :
- 
+
  make
  sudo insmod exemple-01.ko
  sudo cat /dev/exemple_01
@@ -19,6 +20,17 @@ exemple-01
  sudo rmmod exemple_01
 
 
+exemple-02
+----------
+ usage :
+
+ make
+ gcc mmap.c -o mmap
+ sudo insmod exemple-02.ko
+ sudo ./mmap exemple_02
+  => Time: xxxxxxxxx.xxxxx
+ Ctrl+C
+ sudo rmmod exemple_02
 
 
 
